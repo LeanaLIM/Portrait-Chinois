@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="logo.png" />
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript" src="data.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<title>Mon Portrait Chinois</title>
+</head>
+
+<body>
+	<div class="youpi">
+	<div id="mention" class="popup popupinvisible">
+		<h2>MENTIONS LEGALES</h2>
+		<p>Imaginé et développé par LIM Léana</p><br>
+		<p>fond: Dimitra Vasilopoulou</p><br>
+		<p>images:
+			<a href="https://unsplash.com/fr" target="_blank"> Unsplash,</a>
+			<a href="https://www.allocine.fr/film/fichefilm-265823/photos/detail/?cmediafile=21651299" target="_blank"> AlloCiné,</a>
+			<a href="https://genius.com/Tsew-the-kid-meme-les-monstres-revent-damour-lyrics" target="_blank"> Genius</a></p><br>
+		<p>Législation relative aux données à caractère personnel</p><br>
+		<p>
+			Hébergeur : Université Gustave Eiffel - 2 rue Albert Einstein, 77420 Champs-sur-Marne, France - 01 60 95 75 00 - webmaster@univ-eiffel.fr
+			
+			Conformément à l'article 15 du Règlement général sur la protection des données (RGPD) du 27 avril 2016, vous disposez d'un droit d'accès aux informations vous concernant. Si vous trouvez que ces informations sont incorrectes, l'article 16 du RGPD vous permet de les modifier ou de les supprimer. Dans ce cas, merci de contacter le directeur de la communication : com@univ-eiffel.fr.
+			
+			Vos données ne seront jamais transmises à des tiers et ne feront jamais l'objet d'une commercialisation. Elles seront envoyées à une base de données ; pour toute demande de suppression ou toute question relative à la collecte ou au traitement de vos données personnelles par le site web, vous pouvez contacter le respnsable de la protection des données du projet : philippe.gambette@univ-eiffel.fr. Elles seront supprimées durant l’été 2023.</p>
+	</div>
+	</div>
+	<div class="gif">
+		<img class="pacman" src="pacman.gif" alt="">
+	</div>
+	<canvas id="fond"></canvas>
+	<section>
+	<header>
+		<h1>Mon<br>portrait<br>chinois</h1>
+		<h3>par LIM Léana</h3>
+		<a href="#animal"><h2 id="play">Play!</h2></a>
+	</header>
+</section>
+	<div id="analogies"></div>
+	
+	<section id="formulaire">
+		<h1>TU VEUX JOUER? <p id="message"></p></h1><br>
+
+		<form method="get">
+			<label for="analogie"> si j'étais </label>
+			<br />
+			<input
+			  type="text"
+			  placeholder="analogie"
+			  name="analogie"
+			  id="analogie"
+			/>
+			<br />
+			<label for="valeur"> je serais </label>
+			<br />
+			<input
+			  type="text"
+			  placeholder="réponse"
+			  name="valeur"
+			  id="valeur"
+			/>
+			<!-- le required sert a forcer la réponse -->
+			<br />
+			<label for="desc"> Description </label>
+			<br />
+			<input
+			  type="text"
+			  placeholder=""
+			  name="desc"
+			  id="desc"
+			/>
+			<br />
+			<label for="desc"> Illustration </label>
+			<br />
+			<input
+			  type="text"
+			  placeholder="URL de l'image"
+			  name="URL"
+			  id="URL"
+			/>
+			<br />
+			<label for="desc">E-mail</label>
+			<br />
+			<input
+			  type="text"
+			  placeholder="e-mail"
+			  name="e-mail"
+			  id="mail"
+			/>
+			<input id="valider" type="submit" name="submit" value="valider" />
+		  </form>
+		  
+	</section>
+	<!-- <section> -->
+		<div id="customAnalogie"></div>
+	<!-- </section> -->
+
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</html>
